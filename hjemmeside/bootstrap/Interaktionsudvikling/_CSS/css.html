@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Læringsportfolio - Emilie Fredslund-Andersen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   
+
+    <!-- Custom fonts for this template -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/agency.min.css" rel="stylesheet">
+    <link href="../../css/portfolio.css" rel="stylesheet"
+  </head>
+
+  <body id="page-top">
+
+    <!-- Sidens indhold start -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">CSS</h2> <!-- Overskrift -->
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+         <!-- Brødtekst start -->
+          <div class="col-md-2">
+            <div style="position:fixed; left:30px;">
+                <a class="navbar-brand" href="../../index.html">Tilbage til forsiden</a><!-- Knap der kalder til forsiden-->
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p>Cascading Style Sheets (CSS) er et sprog oprindeligt skabt af den norske web pioner Håkon Wium Lie og blev først frigivet i 1996. Internet Explorer var den første browser til at understøtte det. Siden overtog W3S standardiseringen af sproget.<p>
+            <a href="https://fronter.com/eadania/links/files.phtml/1682136815$831952233$/Fag/1.+semester/Interaktionsudvikling/Dag+3+-+CSS/dag3+-+intro+til+css.pdf/">Kilde</a>
+            <br>
+            <br>
+            <h5>CSS Syntax</h5>  
+            <br>
+            <img src="../Billeder/css-syntax.png" alt="CSS Syntax" height="200">  
+            <br> 
+            <br>      
+            <p><b>Selectors</b>
+            <br>
+            En selector er det element i HTML-filen der skal styles. De tre primære selectors:
+            <ol>
+              <li>Element selectors: bruges når et tag som f.eks. body skal styles</li>
+              <li>Id selectors: bruges når et tag i HTML-filen har fået en id attribute</li>
+              <li>Class selector: bruges når et tag i HTML-filen har fået en class attribute</li> 
+            </ol>
+
+            I tilfælde af, at flere elementer skal have den samme styling kan en selector indeholde disse. De adskilles med et komma.</p>
+            <br>
+            <p><b>Pseudo-class selectors</b>
+            <br>
+            Selector’en kan også indeholde en pseudo-class og denne bruges hvis et elements forskellige stadier skal defineres og styles. Den mest brugte pseudo-class er hover: hover viser sig ved, at man holder musen over et element og dette så responderer ved et skift i stylingen. Eksempelvis ændring af farve eller størrelse. Pseudo-class’en skrives selector:hover</p>
+            <br>
+            <p><b>Descendant selectors</b>
+            <br>
+            Dette er en strukturel selector og gør det muligt at få fat i et specifikt element, som ligger inde i et eller flere elementer og som ikke har en class eller et id i HTML-filen. Det er tilladt at springe et niveau over.
+            Bruges der en child selector, skal alle niveauer defineres. 
+            Det er som regel nemmest at strukturere sin HTML-kode med classes og id’er. Descendant selectors bruges mest hvis man står i en situation hvor der ikke er mulighed for at rette i HTML-filen.</p>
+            <br> 
+            <p><b>Declarations</b>
+            <br>
+            Indholdet mellem to curly brackets kaldes samlet for en declaration. Declaration består af to dele:
+            <ol>
+              <li>Property: definerer hvilket aspekt af selector’en der skal styles. Eksempelvis background-color eller font-size</li>
+              <li>Value: fortæller hvordan property’en skal style den specifikke selector</li> 
+            </ol>
+            <a href="https://fronter.com/eadania/links/files.phtml/1682136815$831952233$/Fag/1.+semester/Interaktionsudvikling/Dag+3+-+CSS/dag3+-+intro+til+css.pdf">Kilde</a> </p>
+            <br>
+            <p><b>Kaskaderegler</b>
+            <br>
+            Kaskadereglerne beskriver hvordan modstridende declarations løses. Hvilken declaration der er gældende, kommer an på tre ting:
+            <ol>
+              <li>Vigtighed: skrives der !important efter en declaration trumfer specificering og rækkefølge, og denne declaration vil altid være gældende. Bør undgås da det ødelægger idéen med kaskaderegler</li>
+              <li>Specificering: den mest specifikke selector, som er id, er gældende. Den eneste måde at over skrive den på er ved at benytte !important. Er der to declarations, hvor den ene er en child selector, vil denne vinde da det er den mest specifikke</li> 
+              <li>Rækkefølge: hvis declarations har den samme specificering, vil det være rækkefølgen der bestemmer hvilken declaration der er gældende. Den sidst definerede, den nederste i dokumentet eller HTML-filen, er altid den gældende.</li>
+            </ol> 
+
+            Endnu en del af kaskadereglerne er nedarvning; de elementer der ligger under andre elementer nedarver automatisk stylingen fra det øverste element, hvis andet ikke er specificeret. Nedarvning gælder dog ikke padding, border, margin etc.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance">Kilde</a>
+            <br>
+            <a href="https://fronter.com/eadania/links/files.phtml/1682136815$831952233$/Fag/1.+semester/Interaktionsudvikling/Dag+3+-+CSS/dag3+-+intro+til+css.pdf">Kilde</a>
+            <br>
+            <br>
+            <p><b>Box model</b>
+            <br>
+            <br>
+            <img src="../Billeder/box-model.png" alt="Box Model" height="200">
+            <br>
+            <br>
+            Denne model beskriver hvordan følgende properties placerer sig omkring HTML-elementet:
+             <br>
+              
+             <ul>
+               <li>Content: selve elementet. Eksempelvis et billede eller tekst</li>
+               <li>Padding: afstanden mellem elementen og rammen der omslutter det</li>
+               <li>Border: selve rammen. Denne kan være både synlig og usynlig</li>
+               <li>Margin: afstanden mellem rammen og de omkringliggende elementer</li>
+             </ul></p>
+            <br>
+            <p><b>Positioning</b>
+            <br>
+            <br>
+            <img src="../Billeder/positioning.png" alt="Positioning" height="200">
+            <br>
+            <br>  
+            Positioning fungerer således:
+             <ul>
+               <li>Static: i det nederste ”lag” af HTML-siden er elementer med position static. Elementerne positioneres i forhold til hinanden</li>
+               <li>Relative: i det samme lag som static findes de elementer der har position relative; disse er en del af sidens flow og positioneres i forhold til hinanden. De kan dog forskydes fra de øvrige elementer ved brug af position left, right, top eller bottom</li>
+               <li>Absolute: de elementer der får position absolute er ikke en del af sidens flow og bliver placeret uafhængig af de andre elementer. Eftersom absolute ligger i laget over static og relative, har absolute ingen effekt på de andre elementer</li>
+               <li>FIxed: i det øverste lag finder man de elementer der har postion fixed; disse elementer er låst fast i deres placering og vil derfor ikke følge med sidens flow når der scrolles</li>
+             </ul></p>
+            <a href="https://fronter.com/eadania/links/files.phtml/1682136815$831952233$/Fag/1.+semester/Interaktionsudvikling/Dag+3+-+CSS/dag3+-+intro+til+css.pdf">Kilde</a>
+            <br>
+            <a href="https://www.w3schools.com/css/css_positioning.asp"></a>
+            <br>
+            <p><b>CSS Grids</b>
+            <br>
+            <br>
+            <img src="../Billeder/grids.png" alt="CSS Grids" height="200"> 
+            <br>
+            <br> 
+            CSS Grids bruges til opsætning af layout på et website; det gør det lettere at bestemme elementernes størrelse og placering i forhold til hinanden. Det fungerer således: der oprettes kolonner og rækker som tilsammen danner et gitter eller grid. Dette gitter kan inddeles i et antal felter, hvor man selv bestemmer størrelsen på hver især. Sitets indhold placeres i de forskellige kolonner/rækker/felter. Grids er en simplificeret måde at gøre sitet responsivt på, eftersom felterne eksempelvis kan placeres under hinanden, fremfor ved siden af hinanden.</p>
+          </div>
+          <!-- Brødtekst slut -->
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Sidens indhold slut --> 
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>
